@@ -1,0 +1,17 @@
+.sevrices-block {
+    margin: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding: 20px; */
+    background-color: #151921;
+    border-radius: 8px;
+}
+
+.services-icon {
+    width: 100px;
+    height: 100px;
+    color: #1e8693;
+    font-size: 80px;
+    align-items: center;
+    text-align: center;
+  }
