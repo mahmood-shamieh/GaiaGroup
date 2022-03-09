@@ -107,10 +107,10 @@
 /* media query for fonts on mobile version */
 @media (max-width: 412px){
   #carosel-text-headers{
-    font-size: 40px;
+    font-size: 30px;
   }
   #carosel-text-body{
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 .bd-placeholder-img {
