@@ -112,6 +112,12 @@
   #carosel-text-body{
     font-size: 10px;
   }
+  #carosel-div{
+    padding-top: 160px;
+  }
+}
+#myCarousel{
+  height: 100%;background-color: #ffffff;
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -139,5 +145,8 @@
   background-color: #1e8693;
 }
 #carosel-image{
-  height: max-content;
+  
+  height: 100%;
+  object-fit: fill;
+  width: 100%;
 }
