@@ -26,8 +26,6 @@
       font-family: 'Cabin', sans-serif;
       color: #ffffff;
     }
-
-    
   </style>
 
 
@@ -39,9 +37,9 @@
 
 <body style="background-color: #0c0f16;">
 
-  <div class="container-fluid " style="background-color: #222;">
+  <div class="container-fluid " style="/* background-color: #222; */position: absolute;z-index: 2;">
     <header class="d-flex flex-wrap justify-content-center py-3 ">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto  text-decoration-none">
         <img class="bi me-2" style="width: 80px; height: 40px;" src="./media/logo-light.png" alt="">
         <span class="fs-4" style="color: #1e8693;">Gaia <span class="fs-4" style="color: #ffffff;">Group</span></span>
       </a>
@@ -56,7 +54,8 @@
     </header>
   </div>
   <div>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-interval=100 data-pause="hover">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-interval=100 data-pause="hover"
+      style="height: 650px">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -65,13 +64,13 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="height: 650px;">
         <div class="carousel-item active">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#fff" />
           </svg>
-          <img src="./media/mobile development image.jpg" alt="">
+          <img src="./media/mobile development image.jpg" alt="" id="carosel-image">
           <div class="container">
             <div class="carousel-caption">
               <h1 id="carosel-text-headers">
@@ -86,7 +85,7 @@
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-          <img src="./media/graphic design image.png" alt="">
+          <img src="./media/graphic design image.png" alt="" id="carosel-image">
           <div class="container">
             <div class="carousel-caption text-cnter">
               <h1 id="carosel-text-headers">Graphic Design</h1>
@@ -100,7 +99,7 @@
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-          <img src="./media/social media image.jpg" alt="">
+          <img src="./media/social media image.jpg" alt="" id="carosel-image">
           <div class="container">
             <div class="carousel-caption text-center">
               <h1 id="carosel-text-headers">Social Media</h1>
@@ -114,7 +113,7 @@
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-          <img src="./media/web development image.jpg" alt="">
+          <img src="./media/web development image.jpg" alt="" id="carosel-image">
           <div class="container">
             <div class="carousel-caption text-center">
               <h1 id="carosel-text-headers">Web Development</h1>
@@ -128,7 +127,7 @@
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
           </svg>
-          <img src="./media/web hosting image.jpg" alt="">
+          <img id="carosel-image" src="./media/web hosting image.jpg" alt="">
           <div class="container">
             <div class="carousel-caption text-center">
               <h1 id="carosel-text-headers">Web Hosting</h1>
@@ -170,20 +169,22 @@
           passion is to chart those unknown paths ,helping our clients navigate the high seas of digital development and
           services . Whether we'reworking with lean startups , SME's ,or seasoned enterprise companies , Setting Gaia is
           what we do and how we think .</span>
-          <div class="row justify-content-around">
-            <div class="col-md-3 text-center about-blocks">
-              <i class="fa-solid fa-compact-disc services-icon"></i>
-              <h2 id="about-block-header-section">Pixcel Perfect</h2>
-            </div><div class="col-md-3 text-center about-blocks">
-              <i class="fa-solid fa-compact-disc services-icon"></i>
-              <h2 id="about-block-header-section">Creative Design</h2>
-            </div><div class="col-md-3 text-center about-blocks">
-              <i class="fa-solid fa-compact-disc services-icon"></i>
-              <h2 id="about-block-header-section">High Performance</h2>
-            </div>
+        <div class="row justify-content-around">
+          <div class="col-md-3 text-center about-blocks">
+            <i class="fa-solid fa-compact-disc services-icon"></i>
+            <h2 id="about-block-header-section">Pixcel Perfect</h2>
           </div>
+          <div class="col-md-3 text-center about-blocks">
+            <i class="fa-solid fa-compact-disc services-icon"></i>
+            <h2 id="about-block-header-section">Creative Design</h2>
+          </div>
+          <div class="col-md-3 text-center about-blocks">
+            <i class="fa-solid fa-compact-disc services-icon"></i>
+            <h2 id="about-block-header-section">High Performance</h2>
+          </div>
+        </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -200,38 +201,65 @@
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-earth-americas services-icon"></i>
         <h2>Web Development</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Web Development</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-mobile-screen-button services-icon"></i>
         <h2>Mobile Apps</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Mobile Apps</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-thumbs-up services-icon"></i>
         <h2>Social Media</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Social Media</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-object-group services-icon"></i>
         <h2>Graphics Design</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Graphics Design</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-compact-disc services-icon"></i>
         <h2>Media Campaign</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Media Campaign</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-champagne-glasses services-icon"></i>
         <h2>Event Planing</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Event Planing</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-server services-icon"></i>
         <h2>Hosting Services</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Hosting Services</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-tower-broadcast services-icon"></i>
         <h2>Live Streaming</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Live Streaming</h2>
+        </div>
       </div>
       <div class="col-md-3 text-center sevrices-block">
         <i class="fa-solid fa-print services-icon"></i>
         <h2>Printing Services</h2>
+        <div class="overlay">
+          <h2 id="hidden-text">Printing Services</h2>
+        </div>
       </div>
     </div>
   </div>

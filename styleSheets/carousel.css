@@ -138,3 +138,6 @@
   color: #ffffff;
   background-color: #1e8693;
 }
+#carosel-image{
+  height: max-content;
+}

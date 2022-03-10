@@ -1,4 +1,5 @@
 .sevrices-block {
+    position: relative;
     margin: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -6,6 +7,35 @@
     background-color: #151921;
     border-radius: 8px;
 }
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1e8693;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+  }
+  
+  .sevrices-block:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  #hidden-text {
+    white-space: nowrap; 
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 
 .services-icon {
     width: 100px;
@@ -15,3 +45,4 @@
     align-items: center;
     text-align: center;
   }
+  
